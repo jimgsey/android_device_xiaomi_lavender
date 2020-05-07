@@ -24,6 +24,9 @@
 # Inherit the fusion-common definitions
 $(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
 
+# APEX
+ENABLE_APEX := true
+
 # Device Path
 DEVICE_PATH := device/xiaomi/lavender
 
