@@ -28,12 +28,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/lavender/device.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
 
-# Inherit Carbon GSM telephony parts
-$(call inherit-product, vendor/carbon/config/gsm.mk)
-
-# Inherit some common Carbon stuff.
-$(call inherit-product, vendor/carbon/config/common.mk)
+# Inherit some common Superior stuff.
+$(call inherit-product, vendor/superior/config/common.mk)
 
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -42,7 +40,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 	PRIVATE_BUILD_DESC="lavender-user 9 PKQ1.180904.001 V10.3.9.0.PFGMIXM release-keys" 
 
 # Device identifier
-PRODUCT_NAME := carbon_lavender
+PRODUCT_NAME := superior_lavender
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_PLATFORM := SDM660
 PRODUCT_DEVICE := lavender
