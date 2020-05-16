@@ -21,11 +21,11 @@
 # definition file).
 #
 
-# Inherit Redmi Note 7 Superior device config
+# Inherit Redmi Note 7 Stag device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superior_lavender.mk
+    $(LOCAL_DIR)/stag_lavender.mk
 
 COMMON_LUNCH_CHOICES := \
-    superior_lavender-eng \
-    superior_lavender-userdebug \
-    superior_lavender-user
+    stag_lavender-eng \
+    stag_lavender-userdebug \
+    stag_lavender-user
